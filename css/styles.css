@@ -1,0 +1,47 @@
+/* BLOQUEAR SCROLL */
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Espacio para navbar y footer */
+.main-content {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    height: calc(100vh - 130px);
+}
+
+/* Cards estilo glassmorphism */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform .2s ease;
+}
+
+.glass-card:hover {
+    transform: scale(1.03);
+}
+
+canvas {
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.85rem;
+}
